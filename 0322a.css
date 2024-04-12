@@ -1,0 +1,144 @@
+*{
+    /* border:solid 1px #AAC0AA; */
+}
+body{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #F4FFED;
+    color: #3C524E;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-family: "微軟正黑體",sans-serif;
+}
+.resume{
+    /* 讓resume內的兩個div左右呈現 */
+    display: flex;
+    max-width: 950px;
+    border:solid 8px #AAC0AA;
+
+}
+.left{
+    /* 顯示螢幕的5份 */
+    flex: 5;
+    padding-left: 15px;
+    padding-right: 50px;
+    border-right:solid 1px #3C524E;
+}
+.right{
+    /* 顯示螢幕的7份 */
+    flex: 7;
+    padding-right: 15px;
+    padding-left: 50px;
+    /* border-right:solid 1px #AAC0AA; */
+    /* 設定在right底下的div都以right的左上角為座標 */
+    position: relative;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+}
+/* 每個block英文標題 */
+h4{
+    margin: 0px;
+    margin-top: 40px;
+    /* 設定文字粗體大小與透明度 */
+    font-weight: 400;
+    opacity: 0.8;
+}
+/* 每個block中文標題 */
+h2{
+    margin: 0px;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+/* 在HTML有h2指令的後面加上以下格式設定 */
+h2::after{
+    content: "";
+    width: 20px;
+    height: 8px;
+    background-color: #AAC0AA;
+    display: inline-block;
+    margin-left: 10px;
+}
+a{
+    color:#a5ae9e;
+    /* 設定超連結文字無底線 */
+    text-decoration: none;
+}
+.btn{
+    border: solid 3px #3C524E;
+    padding: 5px 20px;
+    margin-right: 10px;
+}
+.fill{
+    background-color: #3C524E;
+}
+.decoration{
+    width: 300px;
+    height: 140px;
+    background: linear-gradient(180deg, #79948f, #dfdfd1);
+    border-radius: 70px 0px 0px 70px;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+}
+.Experience{
+    margin-top: 180px;
+}
+/* 代表第一與第二層的li都要遵照這樣格式
+.listExperience li{
+    display: flex;
+    margin-bottom: 10px;
+} */
+/* 加上>代表只有第一層的li要遵照這樣格式 */
+.listExperience>li{
+    display: flex;
+    margin-bottom: 10px;
+}
+.listExperience li ul{
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: solid 4px #79948f;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    background-color: #79948f;
+    border-radius: 50%;
+    position: relative;
+    /* 超過的範圍隱藏 */
+    overflow: hidden;
+}
+.p90,.p180,.p270,.p360{
+    width: 50%;
+    height: 50%;
+    background-color: #3C524E;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+.p180{
+    top: 50%;
+}
+.p270{
+    left: 0;
+    top: 50%;
+}
+.p360{
+    left: 0;
+}
+.circle::after{
+    content: "";
+    display: block;
+    background-color: #F4FFED;
+    /* calc是計算函數 */
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}

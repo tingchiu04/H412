@@ -1,0 +1,74 @@
+/* *代表所有tsg<>的元素，都要按照此格式設定 */
+*{
+      /* border: solid 2px;  */
+      font-family: 微軟正黑體;
+      font-size: 20px;
+    }
+
+    html,body{
+      width: 100%;
+      height: 100%;
+      background-color: #222;
+      margin: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card{
+      width: 1000px;
+      display: flex; /* 設定在card以下的div都同一行上面 */
+      background-color: #fff;
+      border: solid 5px #e6ccb2;
+      /* 產生一個圓弧半徑為30px */
+      border-radius: 30px;
+      overflow: hidden;
+    }
+    .left{
+      width: 40%;
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Roasted_coffee_beans.jpg/1280px-Roasted_coffee_beans.jpg);
+      background-size: cover;
+    }
+    .right{
+      width: 70%;
+    }
+    ul li{
+      display: inline-block;
+      width: 30%;
+      vertical-align: top;
+    }
+    h1{
+      font-size: 40px;
+      color: #6c584c;
+      /* background-color: #ede0d4; */
+      /* padding: 30px 40px; */
+      /* padding-left: 40px; */
+      margin: 20px;
+    }
+    p{
+      padding: 10px;
+      margin: 20px;
+      line-height: 30px;
+    }
+    h2{
+      margin-top: 30px;
+      font-size: 25px;
+      padding: 10px;
+      margin: 20px;
+      color: #936639;
+    }
+    .smalltext{
+      font-size: 15px;
+      margin-left: 15px;
+      color: #9c6644;
+      /* h1預設有粗體字，normal為沒有粗體字 */
+      font-weight: normal;
+      /* 字貼到底部 */
+      vertical-align: bottom;
+    }
+    ul li h3{
+      background-color: #cb997e;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
